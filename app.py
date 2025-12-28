@@ -21,6 +21,7 @@ st.sidebar.image('https://media2.giphy.com/media/3o7TKVJdxYEDnZ1W5W/source.gif')
 all_value = []
 for i in final_X:
   result = st.sidebar.slider(f'Select{i} value')
-  all_value =.append(result)
+  all_value.append(result)
 
 st.write(all_value)
+
