@@ -22,7 +22,7 @@ st.sidebar.image('https://media.tenor.com/0m3X8whRJBsAAAAm/home-flowers.webp')
 all_value = []
 for i in final_X:
   min_value = fianl_X[i].min()
-  max_value = fianl_X[i].max()
+  max_value = final_X[i].max()
   result = st.sidebar.slider(f'Select{i} value',min_value,max_value)
   all_value.append(result)
 
@@ -46,6 +46,7 @@ with st.spinner('predicting house price'):
 
 st.success(f'Estimated House Price is: $ {final_price}')
 st.markdown('''**Design and Daveloped by: ROBINNN**''')
+
 
 
 
