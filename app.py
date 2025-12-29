@@ -17,12 +17,13 @@ scaler = StandardScaler()
 scaled_X = scaler.fit_transform(final_X)
 
 st.sidebar.title('Select House features: ')
-st.sidebar.image('https://media1.tenor.com/images/434b311e82326de8d2f2a4d93e8d891a/tenor.gif?itemid=7924850')
+st.sidebar.image('https://media.tenor.com/0m3X8whRJBsAAAAm/home-flowers.webp')
 all_value = []
 for i in final_X:
   result = st.sidebar.slider(f'Select{i} value')
   all_value.append(result)
 
 st.write(all_value)
+
 
 
